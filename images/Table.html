@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usain Bolt Achievements</title>
+    <style>
+        /* styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center; 
+        }
+        
+        /* Styling for the main heading */
+        h1 {
+            margin-bottom: 20px; 
+        }
+        
+        /* Container for the form */
+        .form-container {
+            display: inline-block; 
+            text-align: left; 
+            margin-bottom: 20px;
+        }
+        
+        /* Styling for the table */
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        
+        /* Styling for table and headers */
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        /* Header styling */
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        /* Zebra striping for table rows */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        /* Hover effect for table rows */
+        tr:hover {
+            background-color: #ddd;
+        }
+        
+        /* Styling for category rows */
+        .category {
+            font-weight: bold;
+            background-color: #f39c12;
+            color: white;
+        }
+        
+        /* Message styling */
+        .message {
+            text-align: center;
+            margin: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>About Usain Bolt</h1>
+    
+    <div class="form-container">
+        <form>
+            <!-- Input for the user's name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <!-- Input for the user's date of birth -->
+            <label for="birthday">Date of Birth:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+
+            <!-- selecting Usain Bolt's first world record -->
+            <label for="world-record">First World Record:</label>
+            <select id="world-record" name="world-record">
+                <option value="200m">200m</option>
+                <option value="100m">100m</option>
+                <option value="4x100m">4x100m Relay</option>
+            </select><br><br>
+
+            <p>Do you admire Usain Bolt's achievements?</p>
+            <!-- Radio buttons  -->
+            <label>
+                <input type="radio" name="admireBolt" value="admire" required>
+                Yes, I admire him!
+            </label><br>
+            <label>
+                <input type="radio" name="admireBolt" value="fastest">
+                Yes, he is the fastest man alive!
+            </label><br>
+            <label>
+                <input type="radio" name="admireBolt" value="olympic">
+                Yes, he is a true Olympic champion!
+            </label><br><br>
+        </form>
+    </div>  
+
+   
+
+    <!-- Message regarding Usain Bolt's achievements -->
+    <div class="message">
+        Here are the medals Usain Bolt went on to win after his two world records in 2009.
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Event</th>
+                <th>Placement</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Category for World Championships -->
+            <tr class="category">
+                <td colspan="3">World Championships</td>
+            </tr>
+            <tr>
+                <td>2011</td>
+                <td>100m, 200m, 4x100m</td>
+                <td>Gold, Gold, Gold</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td>100m, 200m, 4x100m</td>
+                <td>Gold, Gold, Gold</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td>100m, 200m, 4x100m</td>
+                <td>Gold, Gold, Gold</td>
+            </tr>
+            <!-- Category for Olympics -->
+            <tr class="category">
+                <td colspan="3">Olympics</td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td>100m, 200m, 4x100m</td>
+                <td>Gold, Gold, Gold</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>100m, 200m, 4x100m</td>
+                <td>Gold, Gold, Gold</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
